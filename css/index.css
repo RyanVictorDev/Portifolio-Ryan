@@ -66,6 +66,8 @@ nav ul{
     color: rgb(195, 30, 236);
 }
 
+/* Mobile menu */
+
 .mobile-menu-icon{
     display: none;
 }
@@ -81,6 +83,29 @@ main{
 
 .grap{
     display: flex;
+}
+
+.competencias{
+    display: flex;
+    width: 100%;
+    
+}
+
+.competencia{
+    display: flex;
+    padding: 1.5rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 25px 0 0 0; 
+    box-shadow: 5px 12px 10px -4px rgba(117, 16, 128, 1);
+    flex-direction: column;
+    background-color: rgb(29, 17, 31);
+}
+
+.tituloCompetencia{
+    font-size: large;
+    color: blueviolet;
+    text-align: center;
 }
 
 /* Formas // Efeitos */

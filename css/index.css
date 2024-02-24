@@ -28,7 +28,6 @@ header{
     justify-content: space-around;  
     align-items: center;
     transition: 0.5s ease;
-
     /* Ùtilizei o z-index para sobrepor o header. */
     z-index: 5;
 }
@@ -65,6 +64,14 @@ nav ul{
 
 .nav-links:hover{
     color: rgb(195, 30, 236);
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
 }
 
 main{
@@ -121,7 +128,40 @@ main{
 
  /* Responsividade */
 
- @media screen and (max-width: 600px){
+ @media screen and (max-width: 730px){
+    nav ul{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        width: 100%;
+        position: fixed;
+        flex-direction: column;
+        text-align: center;
+        z-index: 5;
+        backdrop-filter: blur(10px);
+    }
+
+    .mobile-menu .nav-links{
+        display: block;
+        padding-top: 1.2rem;
+        animation: showing 4s ease 0s normal forwards;
+    }
+
+    .open{
+        display: block;
+    }
 
     main{
         padding-top: 20%;
@@ -140,13 +180,19 @@ main{
         border-width: 25px 0 25px 50px;
         margin-left: -2rem;
     }
-
-    nav ul{
-        display: none;
-    }
 }
 
 /* Animações */
+
+@keyframes showing {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+       /* color: aliceblue; */
+    }
+}
 
 @keyframes rightSlide {
     0% {

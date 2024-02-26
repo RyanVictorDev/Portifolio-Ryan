@@ -105,6 +105,7 @@ main{
     margin-top: 2rem;
     padding: 1.5rem;
     flex-direction: column;
+    box-shadow: 0 0 50px rgb(28, 7, 46);
     background-color: rgb(9, 2, 15);
 
 }
@@ -129,10 +130,11 @@ main{
     padding: 1.5rem;
     width: 8rem;
     height: 8rem;
+    /* clip-path: polygon(56% 0, 68% 15%, 98% 18%, 99% 78%, 58% 100%, 31% 81%, 0 61%, 8% 16%); */
     border-radius: 25px 0 0 0; 
     box-shadow: 5px 12px 10px -4px rgba(117, 16, 128, 1);
     flex-direction: column;
-    background-color: rgb(64, 34, 70);
+    background-color: rgb(29, 29, 29);
     transition: 0.5s ease;
     animation: showing 1.5s ease 0s normal forwards;
 

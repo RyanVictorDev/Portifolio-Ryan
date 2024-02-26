@@ -19,7 +19,7 @@ p{
     color: aliceblue;
 }
 
-/* Criando header fixo */
+/* Criando header fixo e configurando ele */
 header{
     display: flex;
     width: 100%;
@@ -67,7 +67,6 @@ nav ul{
 }
 
 /* Mobile menu */
-
 .mobile-menu-icon{
     display: none;
 }
@@ -76,19 +75,53 @@ nav ul{
     display: none;
 }
 
+/* Colocando uma distância do main com o topo da pagina */
 main{
     padding-top: 10%;
 }
-
 
 .grap{
     display: flex;
 }
 
+.tituloSessao{
+    margin-top: -2.7rem;
+    filter: drop-shadow(5px 5px 5px rgb(195, 30, 236));
+    font-size: xx-large;
+    font-weight: bold;
+    transition: 1.2s ease;
+}
+
+/* Hover sessao title */
+.tituloSessao:hover{
+    scale: 1.2;
+    filter: drop-shadow(10px 5px 10px rgb(195, 30, 236));
+}
+
+.sessaoCompetencias{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    background-color: rgb(9, 2, 15);
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 3rem;
+}
+
 .competencias{
     display: flex;
-    width: 100%;
-    
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;    
 }
 
 .competencia{
@@ -99,7 +132,16 @@ main{
     border-radius: 25px 0 0 0; 
     box-shadow: 5px 12px 10px -4px rgba(117, 16, 128, 1);
     flex-direction: column;
-    background-color: rgb(29, 17, 31);
+    background-color: rgb(64, 34, 70);
+    transition: 0.5s ease;
+    animation: showing 1.5s ease 0s normal forwards;
+
+}
+
+.competencia:hover{
+    scale: 1.2;
+    box-shadow: 3px 12px 50px 5px rgba(117, 16, 128, 1);
+
 }
 
 .tituloCompetencia{
@@ -171,6 +213,7 @@ main{
     .mobile-menu ul{
         display: flex;
         width: 100%;
+        height: 100%;
         position: fixed;
         flex-direction: column;
         text-align: center;
@@ -205,17 +248,30 @@ main{
         border-width: 25px 0 25px 50px;
         margin-left: -2rem;
     }
+
+    .container{
+        gap: 1.2rem;
+    }
+
+    .competencias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
 }
 
 /* Animações */
 
 @keyframes showing {
     0% {
+        transform: translateY(2rem);
+        background-color: transparent;
         color: transparent;
     }
 
     100% {
-       /* color: aliceblue; */
+       
     }
 }
 
@@ -229,4 +285,3 @@ main{
       transform: translateX(2rem);
     }
   }
-  

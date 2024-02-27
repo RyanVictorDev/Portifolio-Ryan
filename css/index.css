@@ -80,6 +80,48 @@ main{
     padding-top: 10%;
 }
 
+.hello{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.curriculoDownload{
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    height: 3rem;
+    width: fit-content;
+    padding: 1.5rem;
+    margin-inline: auto;
+    color: aliceblue;
+    background-color: rgb(151, 23, 184);
+    transition: 1.2s ease;
+}
+
+.curriculoDownload:hover{
+    cursor: pointer;
+    background-color: rgb(195, 30, 236);
+    box-shadow: 0px 6px 12px 0px rgba(117, 16, 128, 1);
+}
+
+/* Configuração da foto */
+.foto-port{
+    width: 20rem;
+    height: 20rem;
+    transition: 1.2s ease;
+    animation: showing 1.5s ease 0s normal forwards;
+}
+
+.foto-port:hover{
+    scale: 1.1;
+}
+
 .grap{
     display: flex;
 }
@@ -143,7 +185,6 @@ main{
 .competencia:hover{
     scale: 1.2;
     box-shadow: 3px 12px 50px 5px rgba(117, 16, 128, 1);
-
 }
 
 .tituloCompetencia{
@@ -161,7 +202,7 @@ main{
     height: 0px;
     border-style: solid;
     border-width: 150px 0 150px 300px;
-    border-color: transparent transparent transparent #969696c7;
+    border-color: transparent transparent transparent #96969683;
     transform: rotate(0deg);
 
     animation: rightSlide 2s ease 0s normal forwards;
@@ -174,7 +215,7 @@ main{
     height: 0px;
     border-style: solid;
     border-width: 100px 0 100px 200px;
-    border-color: transparent transparent transparent #969696c7;
+    border-color: transparent transparent transparent #96969679;
     transform: rotate(0deg);
     margin-left: -6rem;
 
@@ -188,7 +229,7 @@ main{
     height: 0px;
     border-style: solid;
     border-width: 50px 0 50px 100px;
-    border-color: transparent transparent transparent #969696c7;
+    border-color: transparent transparent transparent #96969673;
     transform: rotate(0deg);
     margin-left: -3rem;
 
@@ -237,8 +278,17 @@ main{
         padding-top: 20%;
     }
 
+    .grap{
+        margin-left: 5rem;
+    }
+
+    .foto-port{
+        width: 8rem;
+        height: 8rem;
+    }
+
     .triangle{
-        border-width: 75px 0 75px 150px;
+        border-width: 65px 0 65px 120px;
     }
 
     .triangle02{
@@ -280,10 +330,10 @@ main{
 @keyframes rightSlide {
     0% {
         border-color: transparent transparent transparent transparent;
-        transform: translateX(-5rem);
+        transform: translateX(-10rem);
     }
   
     100% {
-      transform: translateX(2rem);
+      transform: translateX(-6rem);
     }
   }

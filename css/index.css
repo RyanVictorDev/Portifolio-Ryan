@@ -239,6 +239,11 @@ main{
  /* Responsividade */
 
  @media screen and (max-width: 730px){
+
+    header{
+        height: 15%;
+    }
+
     nav ul{
         display: none;
     }

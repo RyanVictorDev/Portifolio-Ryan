@@ -19,7 +19,7 @@ p{
     color: aliceblue;
 }
 
-/* Criando header fixo e configurando ele */
+/*-------------------------- Criando header fixo e configurando ele --------------------------*/
 header{
     display: flex;
     width: 100%;
@@ -32,7 +32,7 @@ header{
     z-index: 5;
 }
 
-/* Header reestilisado com a classe criada com js */
+/*-------------------------- Header reestilisado com a classe criada com js --------------------------*/
 header.rolagem{
     height: 10%;
     background-color: rgb(37, 0, 61);
@@ -43,7 +43,7 @@ header.rolagem{
     font-weight: bold;
 }
 
-/* Configurações da navbar */
+/*-------------------------- Configurações da navbar --------------------------*/
 nav{
     display: flex;
     justify-content: space-around;
@@ -66,7 +66,7 @@ nav ul{
     color: rgb(195, 30, 236);
 }
 
-/* Mobile menu */
+/*-------------------------- Mobile menu --------------------------*/
 .mobile-menu-icon{
     display: none;
 }
@@ -75,7 +75,7 @@ nav ul{
     display: none;
 }
 
-/* Colocando uma distância do main com o topo da pagina */
+/*-------------------------- Colocando uma distância do main com o topo da pagina --------------------------*/
 main{
     padding-top: 10%;
 }
@@ -110,7 +110,7 @@ main{
     box-shadow: 0px 6px 12px 0px rgba(117, 16, 128, 1);
 }
 
-/* Configuração da foto */
+/*-------------------------- Configuração da foto --------------------------*/
 .foto-port{
     width: 20rem;
     height: 20rem;
@@ -134,22 +134,66 @@ main{
     transition: 1.2s ease;
 }
 
-/* Hover sessao title */
+/* -------------------------- Sobre mim -------------------------- */
+.sobre{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+    padding: 1.5rem;
+    padding-bottom: 1.5rem;
+    flex-direction: column;
+    box-shadow: 0px 20px 30px rgb(32, 32, 32);
+    background-color: rgb(32, 32, 32);
+}
+
+.sobreTitle{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.sobreText{
+    text-align: justify;
+    max-width: 40%;
+}
+
+.sobreIcons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    animation: showing 3s ease 0s normal forwards;
+}
+
+.sobreImg{
+    width: 5%;
+    filter: invert();
+    animation: rotate 3s ease 0s infinite normal none;
+}
+
+.sobreImgGrandesa{
+    width: 5%;
+    filter: invert();
+}
+
+/*-------------------------- Hover sessao title --------------------------*/
 .tituloSessao:hover{
     scale: 1.2;
     filter: drop-shadow(10px 5px 10px rgb(195, 30, 236));
 }
 
+/*-------------------------- Sessoes Site --------------------------*/
+
+/* -------------------------- Sessão Competencias -------------------------- */
 .sessaoCompetencias{
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     padding: 1.5rem;
+    padding-bottom: 3rem;
     flex-direction: column;
-    box-shadow: 0 0 50px rgb(28, 7, 46);
+    box-shadow: 0 15px 25px rgb(9, 2, 15);
     background-color: rgb(9, 2, 15);
-
 }
 
 .container{
@@ -193,7 +237,20 @@ main{
     text-align: center;
 }
 
-/* Formas // Efeitos */
+/* -------------------------- Sessão Projetos -------------------------- */
+.sessaoProjetos{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    box-shadow: 0 15px 25px rgb(21, 9, 32);
+    /* background-color: red; */
+    background-color: rgb(21, 9, 32);
+}
+
+/*-------------------------- Formas // Efeitos --------------------------*/
 
 .triangle {
     margin-top: auto;
@@ -236,7 +293,7 @@ main{
     animation: rightSlide 4s ease 0s normal forwards;
  }
 
- /* Responsividade */
+ /*-------------------------- Responsividade --------------------------*/
 
  @media screen and (max-width: 730px){
 
@@ -318,7 +375,7 @@ main{
     }
 }
 
-/* Animações */
+/*-------------------------- Animações --------------------------*/
 
 @keyframes showing {
     0% {
@@ -341,4 +398,17 @@ main{
     100% {
       transform: translateX(-6rem);
     }
+    }
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+      transform-origin: center;
+    }
+  
+    100% {
+      transform: rotate(360deg);
+      transform-origin: center;
+    }
   }
+  

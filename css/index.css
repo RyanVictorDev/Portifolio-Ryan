@@ -319,6 +319,56 @@ main{
     animation: rightSlide 4s ease 0s normal forwards;
  }
 
+ /*-------------------------- Footer --------------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 0px 5px 60px rgb(73, 0, 102);
+    background-image: linear-gradient(to right, rgb(37, 0, 61), rgb(84, 0, 139));
+}
+
+.contatosTitle{
+    margin-inline: auto;
+    font-size: xx-large;
+    font-weight: bold;
+    filter: drop-shadow(5px 5px 5px rgb(111, 0, 255));
+    transition: 1.2s ease;
+}
+
+.contatosList{
+    display: flex;
+    margin-top: 0.5rem;
+    gap: 5rem;
+    margin-inline: auto;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    transition: 0.5s ease;
+}
+
+.contato:hover{
+    scale: 1.1;
+    filter: drop-shadow(0px 5px 10px white);
+
+}
+
+.contatoNome{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: 1.5s ease;
+}
+
+.contatoImg{
+    width: 80%;
+    height: 80%;
+}
  /*-------------------------- Responsividade --------------------------*/
 
  @media screen and (max-width: 730px){

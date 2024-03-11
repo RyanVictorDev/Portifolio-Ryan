@@ -154,7 +154,7 @@ main{
 }
 
 .sobreText{
-    text-align: justify;
+    text-align: center;
     width: 50%;
 }
 
@@ -163,6 +163,7 @@ main{
     color: rgb(164, 121, 204);
     font-weight: bold;
     transition: 0.5s ease;
+    margin-bottom: 1rem;
 }
 
 .sobreFrase:hover{
@@ -255,7 +256,7 @@ main{
 
 .competencia:hover{
     scale: 1.2;
-    border: solid 1.5px aliceblue;
+    border: solid 1.5px rgba(240, 248, 255, 0.397);
     box-shadow: 3px 12px 50px 5px rgba(117, 16, 128, 1);
 }
 
@@ -306,6 +307,41 @@ main{
     flex-direction: column;
     align-items: center;
     width: 50%;
+}
+
+/* Botão para acessar projeto */
+.buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttonProject, .buttonProjectWeb{
+    display: flex;
+    height: 3rem;
+    margin-top: 1rem;
+    align-items: center;
+    padding-right: 0.3rem;
+    gap: 0.5rem;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.buttonProjectWeb{
+    background-color: rgb(144, 241, 165);
+}
+
+.buttonProject:hover, .buttonProjectWeb:hover{
+    filter: invert();
+}
+
+.buttonProject img, .buttonProjectWeb img{
+    width: 3rem;
+    margin-left: 0;
 }
 
  /*-------------------------- Footer --------------------------*/

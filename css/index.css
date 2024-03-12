@@ -82,7 +82,6 @@ main{
 .hello{
     display: flex;
     flex-direction: column;
-    
 }
 
 .row{
@@ -98,7 +97,6 @@ main{
     width: fit-content;
     padding: 1.5rem;
     margin-top: 3rem;
-    margin-bottom: 3rem;
     margin-inline: auto;
     color: aliceblue;
     background-color: rgb(151, 23, 184);
@@ -135,16 +133,22 @@ main{
     transition: 1.2s ease;
 }
 
+/*-------------------------- Sessoes Site --------------------------*/
+#sessaoSobre, #sessaoCompetencias, #sessaoProjetos{
+    padding-top: 8rem;
+    display: block;
+}
+
 /* -------------------------- Sobre mim -------------------------- */
 .sobre{
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 3.5rem;
     padding: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 5rem;
     flex-direction: column;
-    box-shadow: 0px 20px 30px rgb(32, 32, 32);
+    box-shadow: 0px 90px 40px rgb(32, 32, 32);
+    border-bottom: 2px solid white;
     background-color: rgb(32, 32, 32);
 }
 
@@ -200,8 +204,6 @@ main{
     filter: drop-shadow(10px 5px 10px rgb(195, 30, 236));
 }
 
-/*-------------------------- Sessoes Site --------------------------*/
-
 /* -------------------------- Sessão Competencias -------------------------- */
 .tituloCompetencia{
     font-size: large;
@@ -215,12 +217,13 @@ main{
     align-items: center;
     margin-inline: auto;
     gap: 1.5rem;
-    margin-top: 3.5rem;
+    /* margin-top: 3.5rem; */
     padding: 1.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     flex-direction: column;
-    box-shadow: 0 15px 25px rgb(9, 2, 15);
+    box-shadow: 0 90px 40px rgb(9, 2, 15);
     background-color: rgb(9, 2, 15);
+    border-bottom: 2px solid white;
 }
 
 .container{
@@ -271,10 +274,10 @@ main{
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 3.5rem;
+    /* margin-top: 3.5rem; */
     padding: 1.5rem;
     flex-direction: column;
-    box-shadow: 0 15px 25px rgb(21, 9, 32);
+    box-shadow: 0 90px 40px rgb(21, 9, 32);
     background-color: rgb(21, 9, 32);
 }
 

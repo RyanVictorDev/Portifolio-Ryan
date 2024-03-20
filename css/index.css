@@ -76,7 +76,11 @@ nav ul{
 
 /*-------------------------- Colocando uma distância do main com o topo da pagina --------------------------*/
 main{
-    padding-top: 14%;
+    padding-top: 12%;
+}
+
+.grap{
+    display: flex;
 }
 
 .hello{
@@ -89,21 +93,59 @@ main{
     justify-content: space-around;
 }
 
-.curriculoDownload{
+.botoesHello{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.botaoHello{
     display: flex;
     align-items: center;
     border-radius: 25px;
     height: 3rem;
-    width: fit-content;
+    width: 8rem;
+    justify-content: center;
     padding: 1.5rem;
     margin-top: 3rem;
-    margin-inline: auto;
     color: aliceblue;
-    background-color: rgb(151, 23, 184);
     transition: 0.5s ease;
 }
 
-.curriculoDownload:hover{
+.botaoIcon{
+    max-height: 3rem;
+    margin-left: 0;
+}
+
+.githubHello{
+    background-color: white;
+    font-weight: bold;
+    color: black;
+}
+
+.githubHello:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 12px 0px rgb(255, 255, 255, 1);
+}
+
+.linkedinHello{
+    background-color: rgb(0, 81, 255);
+}
+
+.linkedinHello:hover{
+    cursor: pointer;
+    background-color: rgb(56, 119, 255);
+    box-shadow: 0px 6px 12px 0px rgb(56, 119, 255, 1);
+}
+
+.curriculoHello{
+    background-color: rgb(151, 23, 184);
+}
+
+.curriculoHello:hover{
     cursor: pointer;
     background-color: rgb(195, 30, 236);
     box-shadow: 0px 6px 12px 0px rgba(117, 16, 128, 1);
@@ -121,10 +163,6 @@ main{
     scale: 1.1;
 }
 
-.grap{
-    display: flex;
-}
-
 .tituloSessao{
     margin-top: -2.7rem;
     filter: drop-shadow(5px 5px 5px rgb(195, 30, 236));
@@ -135,20 +173,19 @@ main{
 
 /*-------------------------- Sessoes Site --------------------------*/
 #sessaoSobre, #sessaoCompetencias, #sessaoProjetos{
-    padding-top: 8rem;
-    display: block;
+    padding-top: 2rem;
+    
 }
 
 /* -------------------------- Sobre mim -------------------------- */
 .sobre{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 3rem;
     padding: 1.5rem;
     padding-bottom: 5rem;
     flex-direction: column;
     box-shadow: 0px 90px 40px rgb(32, 32, 32);
-    border-bottom: 2px solid white;
     background-color: rgb(32, 32, 32);
 }
 
@@ -216,14 +253,13 @@ main{
     display: flex;
     align-items: center;
     margin-inline: auto;
-    gap: 1.5rem;
+    gap: 5rem;
     /* margin-top: 3.5rem; */
     padding: 1.5rem;
     padding-bottom: 5rem;
     flex-direction: column;
-    box-shadow: 0 90px 40px rgb(9, 2, 15);
     background-color: rgb(9, 2, 15);
-    border-bottom: 2px solid white;
+    box-shadow: 0px 90px 40px rgb(9, 2, 15);
 }
 
 .container{

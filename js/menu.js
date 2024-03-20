@@ -12,3 +12,19 @@ function menuShow() {
     };
 };
 
+let lastScrollTop = 0;
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+  let currentScroll = document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // Scroll para baixo
+    header.style.top = "-100px"; // Esconde o cabeçalho movendo para cima
+  } else {
+    // Scroll para cima
+    header.style.top = "0"; // Mostra o cabeçalho movendo para a posição inicial
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});

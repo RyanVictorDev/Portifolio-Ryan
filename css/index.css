@@ -362,7 +362,7 @@ main{
     height: 3rem;
     margin-top: 1rem;
     align-items: center;
-    padding-right: 0.3rem;
+    padding-right: 0.7rem;
     gap: 0.5rem;
     border: 1px solid black;
     border-radius: 25px;
@@ -512,7 +512,7 @@ main{
         margin-top: -100px;
         width: 100%;
         height: 100%;
-        padding-top: 90px;
+        padding-top: 8rem;
         position: fixed;
         padding: auto;
         flex-direction: column;

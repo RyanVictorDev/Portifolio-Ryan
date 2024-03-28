@@ -320,13 +320,17 @@ main{
 
 .projeto{
     display: flex;
+    /* margin-bottom: 5rem; */
+    padding: 2rem;
+    border-radius: 25px;
     justify-content: center;
     justify-content: space-around;
+    background-color: rgba(49, 41, 48, 0.795);
 }
 
 .projImg{
     /* Adicionando imagem como background da div */
-    background-image: url(../img/portPrint.png);
+    background-image: url(../img/projSiteLog.png);
     width: 10rem;
     height: 15rem;
     /* Colocando o tamanho da imagem justo com o tamanho da div */
@@ -340,13 +344,19 @@ main{
 
 .projImg:hover{
     background-position: 100%;
+    width: 20rem;
 }
 
 .projetoDescricao{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
     width: 50%;
+}
+
+.projetoTitulo{
+    font-size: large;
 }
 
 /* Botão para acessar projeto */
@@ -588,7 +598,18 @@ main{
     .tituloCompetencia{
         font-size: small;
     }
+
+/* -------------------------- Sessão Projetos -------------------------- */
+    .projImg{
+        height: 13rem;
+    }
+
+    .projImg:hover{
+        width: 13rem;
+    }
 }
+
+
 
 /*-------------------------- Animações --------------------------*/
 

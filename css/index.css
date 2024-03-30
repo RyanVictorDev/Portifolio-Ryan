@@ -363,6 +363,7 @@ main{
 /* Botão para acessar projeto */
 .buttons{
     display: flex;
+    margin-top: 1rem;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -380,6 +381,10 @@ main{
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s ease;
+}
+
+.buttonProject p, .buttonProjectWeb p{
+    color: black;
 }
 
 .buttonProjectWeb{
@@ -610,6 +615,11 @@ main{
 
     .buttonProject, .buttonProjectWeb{
         font-size: small;
+        padding-right: 0;
+    }
+
+    .buttonProject p, .buttonProjectWeb p{
+        display: none;
     }
 }
 

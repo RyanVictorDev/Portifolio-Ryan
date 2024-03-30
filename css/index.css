@@ -105,11 +105,13 @@ main{
     display: flex;
     border-radius: 25px;
     height: 3rem;
-    width: 8rem;
+    padding-right: 1rem;
     align-items: center;
-    gap: 10%;
+    gap: 1rem;
+    justify-content: space-evenly;
     margin-top: 3rem;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
     transition: 0.5s ease;
 }
 
@@ -119,8 +121,6 @@ main{
 
 .githubHello{
     background-color: white;
-    font-weight: bold;
-    color: black;
 }
 
 .githubHello:hover{
@@ -438,7 +438,6 @@ main{
 .contato:hover{
     scale: 1.1;
     filter: drop-shadow(0px 1px 2px rgba(255, 255, 255, 0.336));
-
 }
 
 .contatoNome{
@@ -605,7 +604,11 @@ main{
     }
 
     .projImg:hover{
-        width: 13rem;
+        width: 10rem;
+    }
+
+    .buttonProject, .buttonProjectWeb{
+        font-size: small;
     }
 }
 

@@ -19,6 +19,9 @@ p{
     color: aliceblue;
 }
 
+.reveal{
+    visibility: hidden;
+}
 /*-------------------------- Criando header fixo e configurando ele --------------------------*/
 header{
     display: flex;
@@ -358,7 +361,7 @@ main{
 
 .projetoTitulo{
     font-size: large;
-}
+ }
 
 /* Botão para acessar projeto */
 .buttons{
@@ -372,7 +375,6 @@ main{
 .buttonProject, .buttonProjectWeb{
     display: flex;
     height: 3rem;
-    margin-top: 1rem;
     align-items: center;
     padding-right: 0.7rem;
     gap: 0.5rem;

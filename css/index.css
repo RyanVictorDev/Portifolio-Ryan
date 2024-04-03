@@ -334,7 +334,6 @@ main{
 
 .projImg{
     /* Adicionando imagem como background da div */
-    background-image: url(../img/projSiteLog.png);
     width: 10rem;
     height: 15rem;
     /* Colocando o tamanho da imagem justo com o tamanho da div */
@@ -344,6 +343,14 @@ main{
     border-radius: 40px;
     cursor: pointer;
     transition: 5s ease;
+}
+
+.imagemProjeto1{
+    background-image: url(../img/projSiteLog.png);
+}
+
+.imagemProjeto2{
+    background-image: url(../img/projStayOn.png);
 }
 
 .projImg:hover{
@@ -361,6 +368,7 @@ main{
 
 .projetoTitulo{
     font-size: large;
+    font-weight: bold;
  }
 
 /* Botão para acessar projeto */

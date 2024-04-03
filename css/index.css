@@ -615,12 +615,24 @@ main{
     }
 
 /* -------------------------- Sessão Projetos -------------------------- */
+    .projeto{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projetoRight{
+        flex-direction: column-reverse;
+    }
+
     .projImg{
         height: 13rem;
+        width: 50%;
     }
 
     .projImg:hover{
-        width: 10rem;
+        width: 80%;
     }
 
     .buttonProject, .buttonProjectWeb{

@@ -550,7 +550,7 @@ main{
         display: block;
         font-size: large;
         padding-top: 1.2rem;
-        animation: showing 4s ease 0s normal forwards;
+        animation: showing 0.5s ease-in-out 0s normal forwards;
     }
 
     .open{
@@ -593,8 +593,13 @@ main{
         gap: 1.2rem;
     }
 
+    .sobreText{
+        width: 90%;
+    }
+
     .sobreFrase{
-        font-size: large;
+        font-size: medium;
+        text-align: center;
     }
 
 /* -------------------------- Sessão Competencias -------------------------- */

@@ -1,6 +1,39 @@
 *{margin: 0; padding: 0; box-sizing: border-box;text-decoration: none; border: none;outline: none; scroll-behavior: smooth;}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/*-------------------------- Criando scroll --------------------------*/
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #222222;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #220854;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #37026B;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #757575;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #6D67A3;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #6E03A3;
+  }
+  
+
 body{
     background-color: rgb(22, 22, 22);
     font-family: 'Roboto', sans-serif;

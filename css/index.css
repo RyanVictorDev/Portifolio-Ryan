@@ -193,12 +193,14 @@ main{
 .foto-port{
     width: 20rem;
     height: 20rem;
+    filter: drop-shadow(5px 1px 20px #3a1c77);
     transition: 1.2s ease;
     animation: showing 1.5s ease 0s normal forwards;
 }
 
 .foto-port:hover{
     scale: 1.1;
+    filter: drop-shadow(5px 5px 50px #3a1c77);
 }
 
 .tituloSessao{
@@ -375,7 +377,7 @@ main{
     position: relative;
     border-radius: 40px;
     cursor: pointer;
-    transition: 5s ease;
+    transition: 4s ease;
 }
 
 .imagemProjeto1{
@@ -383,12 +385,17 @@ main{
 }
 
 .imagemProjeto2{
+    background-image: url(../img/projMatematic.png);
+}
+
+.imagemProjeto3{
     background-image: url(../img/projStayOn.png);
 }
 
 .projImg:hover{
-    background-position: 100%;
     width: 20rem;
+    animation: ShowProjeto 4.5s ease-in-out;
+    background-position: center;
 }
 
 .projetoDescricao{
@@ -725,4 +732,19 @@ main{
       transform-origin: center;
     }
   }
+
+@keyframes ShowProjeto{
+
+    0%{
+        background-position: 0%;
+    }
+
+    50%{
+        background-position: 100%;
+    }
+
+    100%{
+        background-position: center;
+    }
+}
   
